@@ -5,180 +5,238 @@
 <head>
     <meta charset="utf-8">
     <title>Vegan Recipe!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+
+
 </head>
 
-<body>
+<script>
+
+        // Inside your Javascript file
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+
+<body onload="startTime()">
+
+
+<header class="header">
+    <nav class="header-menu">
+        <img class="logo-img" src="imagens/greengrove-high-resolution-logo-white-transparent.png" alt="logo">
+        <a class="header-menu-link" href="index.html">Home</a>
+        <a class="header-menu-link" href="about.html">Recipes</a>
+    </nav>
+
+</header>
+
+
+
+<div class="row">
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li>Grandma's Lentil Soup</li>
+      </ul>
+<div class="column-content">
+
+
+      
     <p>
         <h1>
-            Rich and robust, this vegan Lentil Bolognese is hearty, “meaty” and full of depth of flavor. Toss it with your favorite pasta, or spoon it over creamy polenta- either way, this simple nourishing vegan meal is one the whole family will enjoy. With a video!
+            GRANDMA'S LENTIL SOUP
         </h1>
+        <div id="txt"></div>
     </p>
-
+<hr>
     <p>
         <em>
-            Looking for more? Check out our <a href="https://www.feastingathome.com/vegan-dinner-recipes/">Mouthwatering Vegan Recipes</a>  and our <a href="https://www.feastingathome.com/15-cozy-fall-dinners-vegetarian/">50 Best Vegetarian Recipes </a>!
+            Looking for more? Check out my <a href="https://www.feastingathome.com/vegan-dinner-recipes/">Fudgy Vegan Brownies</a>  and my <a href="https://www.feastingathome.com/15-cozy-fall-dinners-vegetarian/">Savory Vegan Breakfast Tacos with Tofu Scramble </a>!
         </em>
     </p>
 
-    <img src="imagens/Lentil-Bolognese-16-1024x1536.jpg" alt="lentil bolognese">
+<br>
+
+    <img src="imagens/mainlentil.jpg" alt="lentil">
    
-    <p>
-        The last few nights have been chilly here. The air smells of leaves and pine, and woodsmoke from chimneys nearby. It’s getting darker sooner, I’ve got my wool socks on and all I want to eat right now is pasta. And bread!  Cozy comfort food.</p>
+    <p> Gather 'round, soup lovers!</p>
 
-    <p>So this is how this recipe came to be. Brian and I were both craving something rich and “meaty” the other day, something that would hold up to a glass of red wine, all the while staying plant-based. And here it is- Lentil Bolognese!</p>
+    <p>This hearty lentil soup isn't just about ingredients and instructions; it's a story -—a story of warmth, love, and the magic of family traditions. You see, this recipe has been passed down through the generations in my family, starting with my dear Grandma.</p>
+    <p>I remember her bustling around the kitchen, her laughter filling the air as she whipped up a batch of this soul-soothing soup. It was more than just a meal; it was a gesture of love. And now, I'm thrilled to share it with all of you! ✨</p>
 
-    <p>We made a big pot of this vegan Bolognese and tossed it with pasta the first night, then served over polenta the second night. I can’t decide which way I liked it better. Both were so good! </p>
 
-    <h2>LENTIL BOLOGNESE | 60-SEC VIDEO</h2>
+    <br>
+    <br>
 
-    <img src="imagens/Lentil-Bolognese-20-1024x1536.jpg" alt="prato com colher">
+    <h2>GRANDMA'S LENTIL SOUP | 60 minutes</h2>
+
+    <img src="imagens/ingredients.jpg" alt="ingredientes">
+
+    <div class="ingredients-box">
 
     <h3>
-        INGREDIENTS IN LENTIL BOLOGNESE
+        INGREDIENTS
     </h3>
 
     <ul>
-      <li><strong>Lentils</strong> - the smaller the better! I prefer  Black Caviar lentils (or sub-French Green Lentils or Split lentils)</li>  
-      <li><strong>Onions and garlic</strong> – for depth of flavor</li>
-      <li><strong>Carrots and celery</strong>- for sweetness and complexity</li>
-      <li><strong>Fresh oregano</strong> or thyme –or substitute 2 teaspoons dried Italian herbs</li>
-      <li><strong>Tomato paste</strong> – to add depth and richness</li>
-      <li><strong>Red wine</strong> -optional, to add complexity</li>
-      <li><strong>Fresh tomatoe</strong> –or sub canned tomatoes</li>
-      <li><strong>Veggie stock</strong>  -or substitute water plus veggie boullion</li>
-      <li><strong>Hemp seeds</strong>  (or toasted walnuts or  pecans) for texture and richness</li>
-      <li><strong>Balsamic vinegar</strong> – for a punch of flavor and brightness</li>
+      <li><strong>Dried Lentils</strong> - 1 cup</li>  
+      <li><strong>Vegetable broth</strong> - 4 cups</li>
+      <li><strong>1 Onion</strong> - diced</li>
+      <li><strong>2 Carrots</strong> - diced</li>
+      <li><strong>2 Celery stalks</strong> - diced</li>
     </ul>
 
-    <img src="imagens/Lentil-Bolognese-17.jpg" alt="ingredientes">
+    </div>
 
-    <h3>
-        HOW TO MAKE LENTIL BOLOGNESE
-    </h3>
+  
+    <br>
+    <br>
 
-    <img src="imagens/onion.jpeg" alt="cepora">
+    <h2>
+        INSTRUCTIONS
+    </h2>
 
     <h3>
         STEP ONE
     </h3>
     <p>
-        Saute onion in olive oil until fragrant.
+        Let's get started on this delicious journey! Begin by giving those lentils a good rinse under cold water, just like Grandma always did. Drain them well and set aside.
     </p>
-    <img src="imagens/saute.jpeg" alt="sautezinho">
+    <img src="imagens/rinsedlentils.jpg" alt="ingredientes">
+
+    <br>
 
     <h3>
         STEP TWO
     </h3>
     <p>
-        Add carrots, celery and garlic, continue cooking and stirring about 5 minutes. Add herbs and seasonings.
+        Next up, heat a drizzle of olive oil in a large pot over medium heat. Toss in the diced onion, carrots, and celery, and let them work their magic until they're soft and fragrant, about 5 minutes or so.
     </p>
+
+    <br>
 
     <h3>
-        STEP THREE <em>(optional)</em>
+        STEP THREE
     </h3>
     <p>
-        Add tomato paste, browning it a bit. Deglaze -add a  generous splash of red wine and cook this off.
+        Now, it's time to add in those lovely lentils and pour in the veggie broth. Bring it all to a gentle boil, then lower the heat and let it simmer away, filling your kitchen with the most amazing aroma—just like Grandma's kitchen used to smell. Let it simmer for about 20-25 minutes, until those lentils are tender and oh-so-delicious.
     </p>
 
-    <img src="imagens/Lentil-Bolognese-6.jpeg" alt="vino">
+    <img src="imagens/addinglentil.jpg" alt="vino">
+    <br>
 
     <h3>
         STEP FOUR
     </h3>
     <p>
-        Add tomatoes and their juices.
+        Season your soup with a pinch of salt and pepper to taste, and then it's time to ladle out some love. Serve up this heartwarming soup in your favorite bowls, and get ready to cozy up with each and every spoon.
     </p>
 
-    <img src="imagens/Lentil-Bolognese-tomato.jpeg" alt="tomaro">
-
-    <p>>
-        Add the lentils, hemp seeds or walnut nuts, and broth.
-    </p>
-
-    <img src="imagens/Lentil-Bolognese-21.jpg" alt="graozes">
-
-    <p>
-        Toasted ground walnuts add really great flavor- but I like the ease of adding the hemp seeds– no grinding necessary!
-    </p>
-
-    <p>
-        Keep in mind the smaller the lentils the faster the bolognese will cook! These little black caviar lentils are the best- just 20 minutes of cooking time.    </p>
-
-    <img src="imagens/Lentil-Bolognese-lentils.jpeg" alt="lentilhas rancho gordo">
-
-    <h3>
-        STEP FIVE
-    </h3>
-    <p>
-        Bring to a boil and cover.  Simmer for 20-30 minutes
-    </p>
-
-    <img src="imagens/panela.jpeg" alt="ponera">
-
-    <h3>
-        STEP SIX
-    </h3>
-    <p>
-        Once the lentils are tender, remove the lid and cook off some of the liquid.
-    </p>
-
-    <img src="imagens/cozinhando.png" alt="ponera cozinhano">
-
-    <h3>
-        STEP SEVEN
-    </h3>
-    <p>
-        Taste and adjust seasonings, and stir in the balsamic vinegar.
-    </p>
-
-    <img src="imagens/Lentil-Bolognese-5.jpg" alt="cole">
+    <img src="imagens/serve.jpg" alt="tcharan">
+    <!-- mushi mushi -->
 
 
-    <h3>
-        STEP EIGHT
-    </h3>
-    <p>
-        Serve!  Spoon this over creamy polenta, or toss it with your favorite pasta.  Keep it vegan if you like or top with parmesan or pecorino cheese.
-    </p>
+    <br>
+    <br>
 
-    <img src="imagens/serve.png" alt="tcharan">
+    <p>As you enjoy this hearty lentil soup, I hope you can feel the <strong>warmth of Grandma's love</strong> and the richness of our family's history. Here's to cherished memories, comforting traditions, and the joy of sharing a meal with the ones we hold dear. From my kitchen to yours, happy cooking! 🥣✨
+    
+    
+    <p>xoxo</p>
+    <p>Mimi</p>
 
-    <div>
-        <h4>
-            MORE RECIPES YOU MAY ENJOY
-        </h4>
+    <hr>
+    <br>
+    <br>
 
-        <ul>
-            <li>50+ Pantry Staples for the Vegan Kitchen</li>
-            <li> Lasagna Bolognese</li>
-            <li>Turkey Mushroom Bolognese</li>
-            <li>Our 25 BEST Lentil Recipes! (Plus how to cook Lentils)</li>
-            <li>Simple Braised French Lentils</li>
-            <li>Moroccan Lentil Quinoa Soup</li>
-            <li>Easy Healthy Veggie-Driven Pasta Recipes! (Vegan-adaptable)</li>
-        </ul>
+    
+    <div class="recommendation-container">
+        <h2>You might also like</h2>
+        <div class="article-container">
+            <div class="article-card">
+                <img src="imagens/salad.jpg" alt="gato1" class="article-img">
+                <div class="card-content"><h4>Vegan Caesar Salad with Tempeh Bacon</h4></div>
+                
+            </div>
+            <div class="article-card">
+                <img src="imagens/garlic-bread.jpg" alt="gato2"  class="article-img" >
+                <div class="card-content"><h4>Rustic Garlic Bread</h4></div>
+            </div>
+            <div class="article-card">
+                <img src="imagens/applecrisp.jpg" alt="gato3" class="article-img">
+                <div class="card-content"><h4>Warm Apple Crisp</h4></div>
+            </div>
+        </div>
+
     </div>
 
-    <img src="imagens/lentil-23.png" alt="prato feito">
+    </div>
 
-    <p><strong>On the homefront:</strong> It’s been a beautiful week here. The leaves are turning, the sun is shining, the birds are singing. Nature doesn’t seem to take notice of what is in the news and all the worldy drama and happenings, it just keeps unfolding in its own time.</p>
-
-   <p> Mercury is in retrograde until mid-October, meaning it has the appearance of moving backward in the sky. During this time, some believe this backward motion can disrupt travel, communication and technology. Coincidence, perhaps, but compelling given the events of this week. 😉</p>
+    </ul>
 
 
-    <p>And while it is always good to have a healthy dose of cynicism I find this retrograde particularly interesting.  How life often mirrors a bigger story. Are we not, after all, made of stars? Lately, on a personal level, I’ve noticed, “signs” directing me to be “patient and wait”, or hold my tongue, or delay a big decision, or to not force things.</p>
 
-    <p>When I take heed, things are easier…</p>
 
-    <p>I hope you are having a beautiful start to your week friends! Enjoy this recipe for Lentil Bolognese and please share how you serve it or adapt this!</p>
 
-    <p>xoxo</p>
+<!--aqui vem a coluna esquerda-->
 
-    <p>Sylvia</p>
+<div class="column-shortcuts">
 
+    <!--about-->
+    <div class="about">
+        <img src="imagens/kaung-minn-kent-6GwRTTKKUvc-unsplash.jpg" alt="mimi" class="profile-pic">
+        <p>
+            <strong>Hey, I'm Mimi!</strong> I've got all the tasty vegan recipes you need to spice up your kitchen game. Let's swap out the meat and dairy for some awesome plant-based flavors that'll make your taste buds dance.
+        </p>
+
+
+    </div>
+    <!--about-->
+    <br>
+    <hr>
+    <br>
+    <!--shortcuts-->
+    <div>
+        <h4>
+            LATEST ARTICLES
+        </h4>
+            <p><a href="gooogle.com">High-Protein Vegan Buddha Bowl</a></p>
+            <p><a href="gooogle.com">One-Pot Vegan Spaghetti Bolognese</a></p>
+            <p><a href="gooogle.com">Vegan Comfort Food Classics: Recipes for your Cozy Nights</a></p>
+            <p><a href="gooogle.com">Creamy Vegan Mac and Cheese</a></p>
+            <p><a href="gooogle.com">Vegan Breakfast: Starting your Day Right</a></p>
+            <p><a href="gooogle.com">Nutrient-Packed Green Smoothie</a></p>
+    </div>
+        <!--shortcuts-->
+
+
+
+</div>
+</div>
+
+<!--aqui termina a coluna esquerda-->
+
+
+
+</div>
 
 
 
 </body>
+
+
 
 </html>
